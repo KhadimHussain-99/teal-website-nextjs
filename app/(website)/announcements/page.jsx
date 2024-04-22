@@ -4,8 +4,7 @@ import AnnounceCard from "./AnnounceCard";
 import image1 from "@/public/assets/images/all-img/summer.jpg";
 import image2 from "@/public/assets/images/all-img/bali.jpg";
 import image3 from "@/public/assets/images/all-img/hot-baloon.jpg";
-import topBanner from "../../../public/assets/images/all-img/announce.avif";
-
+import topBanner from "@/public/assets/images/all-img/announce.avif";
 import Image from "next/image";
 
 function Announcementspage() {

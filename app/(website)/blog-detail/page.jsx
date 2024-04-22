@@ -9,7 +9,7 @@ import ArticleCard from "@/components/websitePartials/articlecard";
 import { blogDetails } from "@/constant/data";
 import Image from "next/image";
 
-export default function Blog() {
+export default function BlogDetailPage() {
   return (
     <div className="sm:container mx-2 sm:mx-auto my-8 font-vietnam text-gray-900">
       <div className="grid grid-cols-12 gap-5 xl:gap-8">

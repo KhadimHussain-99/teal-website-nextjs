@@ -65,6 +65,33 @@ export default function Home() {
     waitForAnimate: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    // appendDots: (dots) => (
+    //   <div
+    //     style={{
+    //       // backgroundColor: "#ddd",
+    //       borderRadius: "10px",
+    //       paddingTop: "4px",
+    //       borderRadius: "50%",
+    //     }}
+    //   >
+    //     <ul style={{ margin: "0px" }}> {dots} </ul>
+    //   </div>
+    // ),
+    // customPaging: (i) => (
+    //   <div
+    //     style={{
+    //       // width: "30px",
+    //       color: "rgb(5 150 105)",
+    //       backgroundColor: "rgb(5 150 105)",
+
+    //       border: "1px blue solid",
+    //       borderRadius: "50%",
+    //       padding: "2px",
+    //     }}
+    //   >
+    //     {/* {i + 1} */}
+    //   </div>
+    // ),
   };
 
   return (
@@ -94,7 +121,7 @@ export default function Home() {
             Offer to Inspire You
           </h1>
           <Link
-            href="/"
+            href="/marketing"
             className="mb-0 pt-1 text-main text-xs xs:text-sm hover:text-primary-600 transition-all duration-300 ease-in-out inline-flex items-center justify-end group"
           >
             See All{" "}
@@ -192,7 +219,7 @@ export default function Home() {
             Featured guide from users
           </h1>
           <Link
-            href="/"
+            href="/blogs"
             className="mb-0 pt-1 text-main text-xs xs:text-sm hover:text-primary-600 transition-all duration-300 ease-in-out inline-flex items-center justify-end group"
           >
             See All{" "}

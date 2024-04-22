@@ -56,7 +56,7 @@ const Navbar = ({ isScrolled }) => {
       </div>
       <div className="relative group">
         <Link
-          href="/blog"
+          href="/blogs"
           className={`${
             location === "/blog" ? "text-teal-600" : ""
           } text-base font-semibold group-hover:text-teal-600 transition duration-200 ease-in-out flex items-center gap-1 cursor-pointer`}
