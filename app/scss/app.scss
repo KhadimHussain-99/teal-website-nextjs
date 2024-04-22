@@ -1,0 +1,347 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply h-full overflow-x-hidden dark:text-slate-300 text-slate-600 font-normal;
+  }
+  .app-warp {
+    &.light,
+    &.skin--default {
+      @apply bg-slate-100;
+    }
+    &.lght,
+    &.skin--bordered {
+      @apply bg-transparent;
+    }
+    &.dark {
+      @apply bg-[#0f172a] text-slate-300;
+    }
+  }
+  html,
+  body {
+    @apply h-full;
+  }
+
+  .dashcode-app-wrapper {
+    @apply relative;
+  }
+  .single-sidebar-menu .ReactCollapse--collapse {
+    transition: height 400ms;
+  }
+  .space-xy-5 {
+    > div,
+    > button,
+    > a,
+    label,
+    > * {
+      @apply mr-2 mb-2;
+    }
+  }
+  .space-xy-6 {
+    > div,
+    > button,
+    > a,
+    label,
+    > * {
+      @apply mr-4 mb-2;
+    }
+  }
+
+  html[dir="rtl"] {
+    .recharts-wrapper {
+      direction: rtl;
+    }
+    .recharts-yAxis {
+      .recharts-text {
+        text-anchor: start;
+      }
+    }
+  }
+  .dashcode-app {
+    .leaflet-control {
+      z-index: 0 !important;
+    }
+    .leaflet-control-container {
+      z-index: 555 !important;
+      position: relative;
+    }
+    .recharts-curve.recharts-tooltip-cursor {
+      display: none;
+    }
+    .recharts-wrapper.bar-chart {
+      .recharts-tooltip-cursor {
+        fill: transparent;
+      }
+    }
+    .recharts-tooltip-wrapper {
+      border: none !important;
+    }
+
+    // .recharts-cartesian-grid line,
+    // .recharts-polar-grid-angle line,
+    // .recharts-yAxis line,
+    // .recharts-xAxis line {
+    //   @apply stroke-black-200 dark:stroke-slate-700;
+    // }
+  }
+  .loader {
+    color: #0f766e;
+    font-size: 45px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    transform: translateZ(0);
+    animation: mltShdSpin 1.7s infinite ease, round 1.7s infinite ease;
+  }
+  
+  @keyframes mltShdSpin {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em,
+      0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 
+      0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, 
+      -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, 
+      -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
+       -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, 
+       -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+       -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, 
+       -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 
+      0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  
+  @keyframes round {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+  }
+   
+  
+  @keyframes mulShdSpin {
+    0%,
+    100% {
+      box-shadow: 0 -3em 0 0.2em, 
+      2em -2em 0 0em, 3em 0 0 -1em, 
+      2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 0;
+    }
+    12.5% {
+      box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 
+      3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    25% {
+      box-shadow: 0 -3em 0 -0.5em, 
+      2em -2em 0 0, 3em 0 0 0.2em, 
+      2em 2em 0 0, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    37.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, 
+       -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, 
+       -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, 
+       -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+      box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 
+      3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 
+      3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+  }
+
+  .navbar {
+    position: absolute;
+    z-index: 500;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #1c1a1a;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    
+    &_scrolled {
+      position: fixed;
+      animation-name: fadeInUp;
+      animation-duration: 1s;
+    }
+    
+    // .container {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: space-between;
+    // }
+    
+    &__brand {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.5rem;
+      transition: all .09s ease-out;
+      
+      &:hover {
+        color: coral;
+      }
+    }
+    
+    &__nav {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      
+      li {
+        display: inline-block;
+        
+        a {
+          padding: 7px;
+          color: #fff;
+          opacity: 0.7;
+          text-decoration: none;
+          font-weight: 400;
+          transition: all .09s ease-out;
+          
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      top: -50px;
+    }
+    
+    to {
+      opacity: 1;
+      top: 0;
+    }
+  }
+
+  @mixin scrollbar(){
+
+    @media screen and (max-width: 767px) {
+      /* Mobile specific scrollbar styles */
+      &::-webkit-scrollbar {
+          width: 8px; /* Adjust the width for mobile screens */
+          height: 8px; /* Adjust the height for mobile screens */
+      }
+  
+      &::-webkit-scrollbar-thumb {
+          height: 4px; /* Adjust the thumb height for mobile screens */
+          border-width: 2px; /* Adjust the border width for mobile screens */
+          border-radius: 4px; /* Adjust the border radius for mobile screens */
+          background-color: rgba(0, 0, 0, 0.25); /* Adjust the background color for mobile screens */
+          box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.1), inset 1px 1px 0px rgba(0, 0, 0, 0.1); /* Adjust the box shadow for mobile screens */
+      }
+  }
+
+    &::-webkit-scrollbar {
+        width: 14px;
+        height: 18px;
+    }
+    &::-webkit-scrollbar-thumb {
+        height: 6px;
+        border: 4px solid rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+        border-radius: 7px;
+        background-color: rgba(0, 0, 0, 0.15);
+        box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+    }
+    &::-webkit-scrollbar-button {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+    &::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+  
+  }
+  
+  .scrollbar{
+    overflow-y: scroll;
+    @include scrollbar();
+  }
+
+
+  .home-text {background: linear-gradient(to right, #1bbc9b 0%, #14b9d5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+
+    .footer-link {
+      @apply cursor-pointer hover:ml-1 transition-all ease-in duration-300 text-[#d4d4d4] font-semibold text-[13px];
+    }
+}
+@layer components {
+  @import "components/table.scss";
+  @import "components/map.scss";
+  @import "components/progress";
+  @import "components/tippy";
+  @import "components/swiper";
+  @import "components/alert";
+  @import "components/card";
+  @import "components/auth";
+  @import "components/button";
+  @import "components/badge";
+  @import "components/typography";
+  @import "components/form";
+  @import "components/input-group";
+  @import "components/react-select";
+  @import "components/pagination";
+  @import "components/breadcrumbs";
+  @import "layout/header";
+  @import "layout/footer";
+  @import "layout/sidebar";
+  @import "layout/settings";
+  @import "utility/mix";
+  @import "utility/loading";
+  @import "utility/css-animation";
+  @import "utility/calander";
+  @import "utility/full-calender";
+  @import "components/print.scss";
+}
+@layer utilities {
+}
