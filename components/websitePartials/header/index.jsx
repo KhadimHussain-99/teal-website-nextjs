@@ -42,8 +42,8 @@ const Header = () => {
         <Link href="/">
           <Image
             width={100}
-            height={100}
-            className={` w-32 h-12 cursor-pointer object-cover`}
+            height={120}
+            className={` w-32 h-12 cursor-pointer object-contain`}
             src={logo}
             alt="Teal logo"
           />

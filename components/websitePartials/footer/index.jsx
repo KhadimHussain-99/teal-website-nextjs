@@ -20,7 +20,7 @@ function Footer() {
                   <Image
                     width={140}
                     height={140}
-                    className="w-40"
+                    className="w-40 object-contain"
                     src={footerlogo}
                     alt=""
                   />
