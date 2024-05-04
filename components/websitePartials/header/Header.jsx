@@ -59,7 +59,13 @@ const Header = () => {
         } h-14 lg:hidden flex justify-between px-2 items-center w-full fixed top-0 bg-transparent z-[999999999999999]`}
       >
         <Link href="/" className="flex item items-center px-2">
-          <img className="w-20" src={logo} alt="Teal logo" />
+          <Image
+            width={80}
+            height={50}
+            className="w-20"
+            src={logo}
+            alt="Teal logo"
+          />
         </Link>
 
         <div
