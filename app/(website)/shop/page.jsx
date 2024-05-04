@@ -5,7 +5,7 @@ import Select from "@/components/ui/Select";
 import Checkbox from "@/components/ui/Checkbox";
 import useWidth from "../../../hooks/useWidth";
 import { Icon } from "@iconify/react";
-import ProductCard from "@/components/websitepartials/productcard/index";
+import ProductCard from "@/components/websitePartials/productcard/ProductCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import { shoppingCategories } from "@/constant/data";

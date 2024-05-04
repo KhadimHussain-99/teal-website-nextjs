@@ -2,10 +2,10 @@
 import Slider from "react-slick";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
-import Hero from "../components/websitePartials/hero";
-import AnnouncementCard from "../components/websitePartials/announcementcard";
-import FeedsCard from "../components/websitePartials/feedscard";
-import BlogCard from "../components/websitePartials/blogcard";
+import Hero from "../components/websitePartials/hero/Hero";
+import AnnouncementCard from "../components/websitePartials/announcementcard/AnnouncementCard";
+import FeedsCard from "../components/websitePartials/feedscard/FeedsCard";
+import BlogCard from "../components/websitePartials/blogcard/BlogCard";
 import Modal from "../components/ui/Modal";
 import map from "@/public/assets/images/all-img/dotted-map.png";
 import { useState } from "react";
@@ -19,7 +19,7 @@ import {
   offers,
   services,
 } from "../constant/data";
-import MarketingBanner from "../components/websitepartials/marketingBanner";
+import MarketingBanner from "../components/websitePartials/marketingBanner/MarketingBanner";
 import Image from "next/image";
 
 function SampleNextArrow({ onClick }) {

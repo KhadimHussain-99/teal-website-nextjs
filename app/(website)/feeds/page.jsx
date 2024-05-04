@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 import Card from "@/components/ui/Card";
-import PostCard from "../../../components/websitepartials/postcard/index";
+import PostCard from "../../../components/websitePartials/postcard/PostCard";
 import Image from "next/image";
 import { posts } from "@/constant/data";
 

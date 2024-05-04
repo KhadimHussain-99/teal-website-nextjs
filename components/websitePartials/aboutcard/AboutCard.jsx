@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 import React from "react";
 
-const AboutCad = ({ icon, title, desc }) => {
+const AboutCard = ({ icon, title, desc }) => {
   return (
     <div className="col-span-1 flex flex-col items-center bg-white rounded-md py-8 px-6 shadow">
       <Icon className="w-10 h-10 text-teal-600 mt-4" icon={icon} />
@@ -13,4 +13,4 @@ const AboutCad = ({ icon, title, desc }) => {
   );
 };
 
-export default AboutCad;
+export default AboutCard;

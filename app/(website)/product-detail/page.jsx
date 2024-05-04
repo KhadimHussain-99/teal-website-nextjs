@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import useWidth from "../../../hooks/useWidth";
 import Image from "next/image";
 import productImg from "@/public/assets/images/all-img/watch.jpeg";
-import ProductCard from "@/components/websitepartials/productcard/index";
+import ProductCard from "@/components/websitePartials/productcard/ProductCard";
 
 export default function ProductDetail() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
