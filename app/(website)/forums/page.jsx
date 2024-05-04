@@ -1,7 +1,7 @@
 "use client";
 import React, { Fragment } from "react";
 import { Tab } from "@headlessui/react";
-import ForumCard from "../../../components/websitepartials/forumcard";
+import ForumCard from "../../../components/websitepartials/forumcard/index";
 import { featuredDestinations, travelDeals } from "../../../constant/data";
 import topBanner from "../../../public/assets/images/all-img/top-banner.jpg";
 import Image from "next/image";

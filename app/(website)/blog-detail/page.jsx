@@ -5,7 +5,7 @@ import chair from "@/public/assets/images/all-img/chair.jpg";
 import time from "@/public/assets/images/all-img/time.jpg";
 import profile from "@/public/assets/images/all-img/thumb-6.png";
 import { Icon } from "@iconify/react";
-import ArticleCard from "@/components/websitePartials/articlecard";
+import ArticleCard from "@/components/websitePartials/articlecard/index";
 import { blogDetails } from "@/constant/data";
 import Image from "next/image";
 

@@ -2,7 +2,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import AboutCad from "../../../components/websitepartials/aboutcard/index";
-import TestimonialCard from "../../../components/websitepartials/testimonalcard/index";";
+import TestimonialCard from "../../../components/websitepartials/testimonalcard/index";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 import { aboutData } from "@/constant/data";
