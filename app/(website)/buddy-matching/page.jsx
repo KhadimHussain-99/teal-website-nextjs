@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import Radio from "@/components/ui/Radio";
 import Textinput from "@/components/ui/Textinput";
 import Select from "@/components/ui/Select";
-import BuddyCard from "@/components/websitepartials/buddycard";
+import BuddyCard from "../../../components/websitepartials/buddycard";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
